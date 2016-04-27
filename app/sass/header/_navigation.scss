@@ -1,0 +1,65 @@
+.navigation {
+	float: left;
+	width: 100%;
+	background-color: #F8F8F8;
+	border-bottom: 1px solid #E3E3E3;
+	&__toggle {
+		float: left;
+		background: none;
+		border: none;
+		cursor: pointer;
+		padding: 23px 20px;
+		span {
+			display: block;
+			position: relative;
+			height: 16px;
+			width: 25px;
+			border-width: 2px 0;
+			border-color: #999; 
+			border-style: solid;
+			&:after {
+				content: "";
+				position: absolute;
+				height: 2px;
+				width: 21px;
+				background-color: #999;
+				z-index: 2;
+				top: 50%;
+				left: 0;
+			}
+		}
+	}
+	&__menu {
+		float: left;
+		li {
+			float: left;
+			border-left: 1px solid #E3E3E3;
+			a {
+				display: block;
+				padding: 25px 15px;
+				font-family: $b;
+				font-size: 14px;
+				color: #3A3A3A;
+				-webkit-transition: all .4s ease-in-out;
+				   -moz-transition: all .4s ease-in-out;
+				    -ms-transition: all .4s ease-in-out;
+				     -o-transition: all .4s ease-in-out;
+				        transition: all .4s ease-in-out;
+				@include link{
+					background-color: #FFD505;
+				}
+			}
+		}
+	}
+	&__search {
+		&_btn {
+			float: right;
+			padding: 23px 0; 
+			font-size: 18px;
+			color: #989898;
+			@include link {
+				color: darken(#989898, 10%);
+			}
+		}
+	}
+}
