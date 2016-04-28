@@ -113,7 +113,6 @@
 		@include border-radius(25px);
 		@include background-clip(padding-box);
 		background-color: #f9d10d;
-		@include background-image(linear-gradient(top, #f9d10d 0%, #ffbf00 100%));
 		
 	}
 	.owl-prev,.owl-next {
