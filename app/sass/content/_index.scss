@@ -244,3 +244,31 @@
 		}
 	}
 }
+
+.store-info {
+	float: left;
+	width: 100%;
+	position: relative;
+	padding: 30px 0;
+	p {
+		float: left;
+		width: 100%;
+		color: #797878;
+		margin: 10px 0;
+		font-size: 14px;
+	}
+}
+
+.providers {
+	float: left;
+	width: 100%;
+	position: relative;
+	text-align: center;
+	padding: 30px 0;
+	&__flex {
+		@extend .collections__flex;
+	}
+	&__btn {
+		@extend .collections__more-btn;
+	}
+}
