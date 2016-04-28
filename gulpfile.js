@@ -74,6 +74,13 @@ gulp.task('compress', function() {
     
 });
 
+gulp.task('extend', function () {
+    gulp.src('./app/html/*.html')
+        .pipe(extender({annotations:true,verbose:false})) // default options
+        .pipe(gulp.dest('./'))
+
+});
+
 /*gulp.task('css-libs', ['sass'], function() {
     return gulp.src('app/css/libs.css') // Выбираем файл для минификации
         .pipe(cssnano()) // Сжимаем
@@ -85,7 +92,9 @@ gulp.task('compress', function() {
 
 gulp.task('watch', ['browser-sync', 'compress'], function() {
     gulp.watch('app/sass/**/*.scss', ['sass']); // Наблюдение за sass файлами в папке sass
-    gulp.watch('./**/*.html', browserSync.reload); // Наблюдение за HTML файлами в корне проекта    
+    gulp.watch(['./app/html/*.html'], ['extend']);
+    gulp.watch('./**/*.html', browserSync.reload); // Наблюдение за HTML файлами в корне проекта
+    gulp.watch('./*.html', browserSync.reload);
     gulp.watch('app/js/*', function() {
        gulp.run('compress');
   }, browserSync.reload); // Наблюдение за JS файлами в папке js
