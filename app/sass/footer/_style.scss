@@ -1,0 +1,61 @@
+.footer {
+	float: left;
+	width: 100%;
+	position: relative;
+	&__nav {
+		float: left;
+		width: 100%;
+		padding: 30px 0;
+		background-color: #393939;
+		&_menu {
+			float: left;
+			li {
+				float: left;
+				margin-right: 50px;
+				a {
+					font-family: $b;
+					color: #fff;
+					font-size: 14px;
+					padding: 10px 0;
+					border-bottom: 2px solid transparent;
+					@include link {
+						color: #ffd505;
+						border-bottom: 2px solid #ffd505;
+					}
+				}
+			}
+		}
+		&_social {
+			float: right;
+			a {
+				margin-right: 30px;
+				font-size: 16px;
+				color: #9D9D9D;
+				@include transition(.4s);
+				@include link {
+					color: #fff;
+				}
+			}
+		}
+	}
+	&__copyright {
+		float: left;
+		width: 100%;
+		padding: 30px 0;
+		p {
+			float: left;
+			color: #A9A9A9;
+			font-size: 14px;
+			a {
+				color: #E15554;
+				@include link {
+					text-decoration: underline;
+					color: #E15554;
+				}
+			}
+		}
+		p.text-right {
+			float: right;
+		}
+	}
+}

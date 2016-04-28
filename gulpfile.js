@@ -94,7 +94,7 @@ gulp.task('watch', ['browser-sync', 'compress'], function() {
     gulp.watch('app/sass/**/*.scss', ['sass']); // Наблюдение за sass файлами в папке sass
     gulp.watch(['./app/html/*.html'], ['extend']);
     gulp.watch('./**/*.html', browserSync.reload); // Наблюдение за HTML файлами в корне проекта
-    gulp.watch('./*.html', browserSync.reload);
+    //gulp.watch('./*.html', browserSync.reload);
     gulp.watch('app/js/*', function() {
        gulp.run('compress');
   }, browserSync.reload); // Наблюдение за JS файлами в папке js
