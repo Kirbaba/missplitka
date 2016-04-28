@@ -1,0 +1,28 @@
+@media only screen and (max-width: 770px) {
+  .contact_block {
+    margin-top: 40px;
+    &_address {
+      width: 100%;
+    }
+    &_phone {
+      margin-top: 20px;
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .contact_block {
+    margin-top: 30px;
+    &_address {
+      width: 100%;
+    }
+    &_phone {
+      margin-top: 20px;
+      width: 100%;
+    }
+    &_map {
+      height: 350px;
+    }
+  }
+}
