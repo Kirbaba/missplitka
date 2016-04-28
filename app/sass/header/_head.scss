@@ -36,6 +36,108 @@
 	}
 	&__basket {
 		width: 15%;
+		position: relative;
+		&_goto {
+			@extend .banner__carousel_item_btn;
+			width: 100%;
+			text-align: center;
+			&_mobile {
+				@extend .banner__carousel_item_btn;
+				float: left;
+				font-size: 12px;
+				color: #3A3A3A;
+				padding: 20px;
+				width: 50%;
+			}
+		}
+		&_popup {
+			display: none;
+			position: absolute;
+			top: 45px;
+			right: 0;
+			width: 358px;
+			background-color: #fff;
+			@include box-shadow(0 0 10px rgba(0,0,0,.5));
+			z-index: 9;
+			-webkit-box-sizing: border-box;
+			   -moz-box-sizing: border-box;
+			        box-sizing: border-box;
+			padding: 40px 20px;
+			h5 {
+				font-size: 14px;
+				color: #3A3A3A;
+				border-bottom: 1px solid #F1F1F1;
+				padding-bottom: 15px;
+			}
+			&_line {
+				float: left;
+				width: 100%;
+				border-bottom: 1px solid #E3E3E3;
+				padding: 20px 0;
+			}
+			&_thumb {
+				float: left;
+				width: 70px;
+				height: 70px;
+				position: relative;
+				@include overflow-img;
+			}
+			&_desc {
+				width: 70%;
+				float: left;
+				padding: 10px 20px;
+				-webkit-box-sizing: border-box;
+				   -moz-box-sizing: border-box;
+				        box-sizing: border-box;
+				h4 {
+				    color: #e15554;
+				    font-size: 18px;
+				    font-family: $bl;
+					margin: 10px 0;
+				}
+				a {
+					font-size: 16px;
+					color: #1C1B1B;
+					@include link {
+						text-decoration: underline;
+					}
+				}
+			}
+			&_del {
+				float: left;
+				width: 15px;
+				height: 17px;
+				background-image: url('../img/noun_323254_cc.png');
+				background-repeat: no-repeat;
+				background-position: 50% 50%;
+				position: relative;
+				margin-top: 25px;
+			}
+			&_foot {
+				float: left;
+				width: 100%;
+				padding: 20px 0;
+				a {
+					float: left;
+					color: #787777;
+					font-size: 14px;
+					margin-top: 3px;
+					@include link {
+						text-decoration: underline;
+					}
+				}
+				h4 {
+					float: right;
+					color: #3A3A3A;
+					font-family: $b;
+					font-size: 14px;
+					span {
+						font-size: 18px;
+						color: #E15554;
+					}
+				}
+			}
+		}
 	}
 	.basket_btn{
 		float: right;
