@@ -27,9 +27,19 @@
 		}
 		
 	}
-	
+	.navigation__toggle {
+		display: block;
+	}
 	.navigation__menu {
 		display: none;
+		border-left: none;
+		
+		li {
+			display: block;
+			width: 100%;
+			border-left: none;
+			border-bottom: 1px solid #999;
+		}
 	}
 	.advantages__item {
 		h4 {
@@ -96,6 +106,113 @@
 
 @media only screen and (max-width: 736px) {
 	
+	.header {
+		&__logo {
+			img {
+				max-width: 100%;
+				margin-top: 5px;
+			}
+		}
+		&__contacts {
+			display: none;			
+		}
+		&__basket {
+			width: 50%;
+		}
+	}
+	.advantages__item {
+		width: 100%;
+		margin: 15px 0;
+		&_icon {
+			display: block;
+			float: none;
+			margin: 0 auto;
+		}
+	}
+	.owl-controls {
+		display: none!important;
+	}
+	.banner__carousel_item_inner {
+		left: 10px;
+		right: 10px;
+		padding-left: 0;
+		padding-right: 0;
+		h3 {
+			font-size: 16px;
+			span {
+				line-height: 32px;
+			}
+			strong {
+				font-size: 24px;
+			}
+		}
+	}
+	.collections__item {
+		width: 100%;
+	}
+	.providers__item {
+		width: 40%;
+		img {
+			max-width: 100%;
+		}
+	}
+	.footer__copyright p.text-right {
+		display: none;
+	}
+	.footer__nav_menu {
+		display: none;
+	}
+	.footer__copyright_desctop {
+		display: none;
+	}
+	.footer__copyright_mobile {
+		display: block;
+	}
+	.footer__nav_mobile {
+		display: block;
+	}
+	.header__basket_popup {
+		padding: 30px 10px;
+		&_thumb {
+			width: 60px;
+			height: 60px;
+		}
+		&_desc {
+			width: calc(100% - 60px);
+		}
+		&_del {
+			display: none;
+		}
+		&_foot {
+			float: left;
+			width: 100%;
+			a {
+				display: none;
+			}
+			h4 {
+				float: left;
+				width: 50%;
+				font-size: 13px;
+				margin-top: 25px;
+				span {
+					font-size: 13px;
+				}
+			}
+		}
+		.header__basket_goto {
+			display: none;
+		}
+		.header__basket_goto_mobile {
+			display: block;
+			text-align: center;
+			width: auto;
+			float: right;
+			font-size: 12px;
+			color: #3A3A3A;
+			padding: 20px;
+		} 
+	}
+
 }
 
 @media only screen and (max-width: 500px) {
@@ -103,5 +220,16 @@
 }
 
 @media only screen and (max-width: 320px) {
-	
+	.banner__carousel_item_inner {
+		h3 {
+			font-size: 14px;
+			strong, span {
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+		}
+	}
+	.header__basket_popup {
+		width: 300px;
+	}
 }

@@ -1,0 +1,46 @@
+@media only screen and (max-width: 1024px) {
+	.catalog__sidebar, .catalog__box {
+		width: 100%;
+		margin: 10px 0;
+	}
+	.catalog__sidebar {
+		h4 {
+			display: inline-block;
+			margin-right: 10px;
+		}
+		&_price {
+			text-align: left;
+		}
+		&_area input[type=checkbox]+label {
+			display: inline-block;
+			margin-right: 10px;
+		}
+		.catalog__item_desc_btn-line {
+			text-align: left;
+		}
+	}
+}
+
+@media only screen and (max-width: 980px) {
+	
+}
+
+@media only screen and (max-width: 770px) {
+
+}
+
+@media only screen and (max-width: 736px) {
+	.catalog__sidebar {
+		h4 {
+			display: block;
+		}
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	
+}
+
+@media only screen and (max-width: 320px) {
+
+}

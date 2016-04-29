@@ -4,11 +4,17 @@
 	
 	border-bottom: 1px solid #E3E3E3;
 	&__toggle {
+		display: none;
 		float: left;
 		background: none;
 		border: none;
 		cursor: pointer;
 		padding: 23px 20px;
+		@include transition(.2s);
+		position: relative;
+		&:active,&:focus {
+			outline: none;
+		}
 		span {
 			display: block;
 			position: relative;
@@ -20,12 +26,24 @@
 			&:after {
 				content: "";
 				position: absolute;
+				@include transition(.2s);
 				height: 2px;
 				width: 21px;
 				background-color: #999;
 				z-index: 2;
 				top: 50%;
 				left: 0;
+			}
+		}
+		&_active {
+			@include transition(.4s);
+			span {
+				border-color: #E15553;
+				&:after {
+					left: 2px;
+					background-color: #E15553;
+					@include transition(.2s);
+				}
 			}
 		}
 	}
@@ -52,9 +70,21 @@
 		}
 	}
 	&__search {
-		&_btn {
+		&_form {
+			display: none;
 			float: right;
-			padding: 23px 0; 
+			position: absolute;
+			right: 10px;
+			margin: 18px 0;
+			padding: 5px 25px 5px 5px;
+			border: none;
+			outline: none;
+		}
+		&_btn {
+			position: absolute;
+			right: 20px;
+			float: right;
+			padding: 21px 0; 
 			font-size: 18px;
 			color: #989898;
 			@include link {

@@ -25,6 +25,15 @@
 				}
 			}
 		}
+		&_mobile {
+			display: none;
+			color: #E15554;
+			float: left;
+			@include link {
+				text-decoration: underline;
+				color: #E15554;
+			}
+		}
 		&_social {
 			float: right;
 			a {
@@ -56,6 +65,9 @@
 		}
 		p.text-right {
 			float: right;
+		}
+		&_mobile {
+			display: none;
 		}
 	}
 }
