@@ -91,3 +91,4 @@ function init() {
     myMap.geoObjects
         .add(myGeoObject);
 }
+
