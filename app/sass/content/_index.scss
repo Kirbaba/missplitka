@@ -195,6 +195,80 @@
 			background-color: #0b0b0b;
 			position: relative;
 			@include overflow-img;
+			.flag {
+				display: block;
+				height: 24px;
+				left: 24px;
+				line-height: 24px;
+				position: absolute;
+				-webkit-transform: rotate(90deg);
+				   -moz-transform: rotate(90deg);
+				    -ms-transform: rotate(90deg);
+				     -o-transform: rotate(90deg);
+				        transform: rotate(90deg);
+				-ms-transform-origin: left top 0;
+				-moz-transform-origin: left top 0;
+				-webkit-transform-origin: left top 0;
+				transform-origin: left top 0;
+				z-index: 15;
+				color: #fff;
+				font-size: 13px;
+				-webkit-box-sizing: border-box;
+				   -moz-box-sizing: border-box;
+				        box-sizing: border-box;
+				padding: 0 5px 0 15px;
+				&:before, &:after {
+					content: "";
+					position: absolute;
+					right: -7px;
+				}
+				&_new {
+					background-color: #D90368;
+					&:before {			
+						bottom: 0;			
+						border-bottom: 14px solid #D90368;
+						border-left: 0 solid transparent;
+						border-right: 10px solid transparent;
+					}
+					&:after {
+						top: 0;
+						border-top: 14px solid #D90368;
+						border-left: 0 solid transparent;
+						border-right: 10px solid transparent;
+					}
+				}
+				&_discount {
+					background-color: #FB5012;
+					&:before {			
+						bottom: 0;			
+						border-bottom: 14px solid #FB5012;
+						border-left: 0 solid transparent;
+						border-right: 10px solid transparent;
+					}
+					&:after {
+						top: 0;
+						border-top: 14px solid #FB5012;
+						border-left: 0 solid transparent;
+						border-right: 10px solid transparent;
+					}
+				}
+				&_guarantee {
+					background-color: #97a73a;
+					&:before {			
+						bottom: 0;			
+						border-bottom: 14px solid #97a73a;
+						border-left: 0 solid transparent;
+						border-right: 10px solid transparent;
+					}
+					&:after {
+						top: 0;
+						border-top: 14px solid #97a73a;
+						border-left: 0 solid transparent;
+						border-right: 10px solid transparent;
+					}
+				}
+				
+			}
 		}
 		&_desc {
 			float: left;
@@ -219,12 +293,20 @@
 				color: #A7A7A7;
 				font-size: 14px;
 			}
+			.tech-info {
+				font-size: 14px;
+				color: #a7a7a7;
+				float: left;
+				width: 100%;
+			}
 		}
 		&_price {
 			color: #E15554;
 			font-size: 18px;
 			font-family: $bl;
 			margin: 30px 0;
+			float: left;
+    		width: 100%;
 		}
 	}
 	&__more-btn {
