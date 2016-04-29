@@ -57,7 +57,7 @@ function init() {
         // Описание геометрии.
         geometry: {
             type: "Point",
-            coordinates: [55.778544, 37.664856]
+            coordinates: [55.778544 , 37.664856]
         },
         // Свойства.
         properties: {
