@@ -1,0 +1,117 @@
+.catalog {
+	&__sidebar {
+		float: left;
+		position: relative;
+		width: 270px;
+		background-color: #e15553;
+		margin-right: 30px;
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+		        box-sizing: border-box;
+		padding: 25px 20px;
+		color: #FFF;
+		h4 {
+			font-size: 18px;
+			font-family: $b;
+			margin: 10px 0;
+			text-align: left;
+		}
+		&_price {
+			float: left;
+			width: 100%;
+			text-align: center;
+			&_input {
+				text-align: center;
+				border: none;
+				outline: none;
+				width: 103px;
+				height: 38px;
+				border: 1px solid #cfcfcf;
+				@include border-radius(17px);
+				margin: 15px 0;
+			}
+		}
+		&_area {
+			float: left;
+			width: 100%;
+			
+
+			input[type="checkbox"] {
+			   display:none;
+			}
+			input[type="checkbox"] + label {
+		    font-size:14px;
+			display: block;
+			margin: 0 0 15px 0;
+			}
+			input[type="checkbox"] + label span {
+			    display: inline-block;
+			    width:19px;
+			    height:19px;
+			    margin:-1px 10px 0 0;
+			    vertical-align:middle;
+			    cursor:pointer;
+			    -moz-border-radius:  50%;
+			    border-radius:  50%;
+			    background-color: #fff;
+			}
+
+			input[type="checkbox"]:checked + label span{
+			    background-color: #FBCD0A;
+			    position: relative;
+			    &:after {
+			    	content: "\f00c";
+					font-family: FontAwesome;
+					position:absolute;
+					top:50%;
+					left:50%;
+					margin-top: -2px;
+					-webkit-transform: translate(-50%, -50%);
+					   -moz-transform: translate(-50%, -50%);
+					    -ms-transform: translate(-50%, -50%);
+					     -o-transform: translate(-50%, -50%);
+					        transform: translate(-50%, -50%);
+					color: #E15554;
+					z-index: 9;
+					font-size: 9px;
+			    }
+			}
+
+			input[type="checkbox"] + label span,
+			input[type="checkbox"]:checked + label span {
+			  -webkit-transition:background-color 0.4s linear;
+			  -o-transition:background-color 0.4s linear;
+			  -moz-transition:background-color 0.4s linear;
+			  transition:background-color 0.4s linear;
+			}
+		}
+	}
+	&__box {
+		float: left;
+		width: calc(100% - 300px);
+		.collections__item {
+			margin-top: 0;
+		}
+	}
+	&__item {
+		@extend .collections__item;
+		position: relative;
+		&_thumb {
+			@extend .collections__item_thumb;
+		}
+		&_desc {
+			@extend .collections__item_desc;
+			&_btn {
+				@extend .banner__carousel_item_btn;
+				display: inline-block;		
+				float: none;
+				margin: 10px 0;		
+				&-line {
+					float: left;
+					width: 100%;
+					text-align: center;
+				}
+			}
+		}
+	}
+}

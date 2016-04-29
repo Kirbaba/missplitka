@@ -8,6 +8,7 @@ body {
   padding-left: 10px;
   margin-right: auto;
   margin-left: auto;
+  position: relative;
 }
 
 .container, .clear-fix {
@@ -71,6 +72,12 @@ ul {
 }
 .align-right {
 	text-align: right;
+}
+
+.content {
+	float: left;
+	width: 100%;
+	position: relative;
 }
 
 

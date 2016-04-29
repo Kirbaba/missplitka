@@ -70,9 +70,19 @@
 		}
 	}
 	&__search {
-		&_btn {
+		&_form {
+			display: none;
 			float: right;
-			padding: 23px 0; 
+			margin: 18px 0;
+			padding: 5px 25px 5px 5px;
+			border: none;
+			outline: none;
+		}
+		&_btn {
+			position: absolute;
+			right: 20px;
+			float: right;
+			padding: 21px 0; 
 			font-size: 18px;
 			color: #989898;
 			@include link {

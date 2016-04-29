@@ -43,6 +43,7 @@
 			text-align: center;
 			&_mobile {
 				@extend .banner__carousel_item_btn;
+				display: none;
 				float: left;
 				font-size: 12px;
 				color: #3A3A3A;

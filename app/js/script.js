@@ -10,6 +10,11 @@ jQuery(document).ready(function($) {
 		event.preventDefault();
 		$('.header__basket_popup').toggle();
 	});
+
+	$('.navigation__search_btn').on("click", function(event) {
+		event.preventDefault();
+		$('.navigation__search_form').toggle();
+	});
 });
 
 ymaps.ready(init);
