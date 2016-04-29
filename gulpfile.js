@@ -16,7 +16,9 @@ gulp.task('css-libs', function() { // Создаем таск Sass
     return gulp.src([
             'app/libs/owl/owl-carousel/owl.carousel.css',
             'app/libs/owl/owl-carousel/owl.theme.css',
-            'app/libs/owl/owl-carousel/owl.transitions.css',             
+            'app/libs/owl/owl-carousel/owl.transitions.css',
+            'app/libs/slick-carousel/slick/slick.css',
+            'app/libs/slick-carousel/slick/slick-theme.css',             
         ]) // Берем источник        
         .pipe(cssnano())
         .pipe(concat('libs.min.css'))
@@ -60,7 +62,8 @@ gulp.task('scripts', function() {
     return gulp.src([ // Берем все необходимые библиотеки
             'app/libs/jquery/dist/jquery.min.js',
             'app/libs/bootstrap/dist/js/bootstrap.min.js',
-             'app/libs/owl/owl-carousel/owl.carousel.min.js', // Берем jQuery
+             'app/libs/owl/owl-carousel/owl.carousel.min.js',
+             'app/libs/slick-carousel/slick/slick.js', // Берем jQuery
         ])
         .pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
         .pipe(uglify()) // Сжимаем JS файл
