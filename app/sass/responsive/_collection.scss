@@ -1,0 +1,22 @@
+@media only screen and (max-width: 736px) {
+	.collection__info_desc {
+		h4 {
+			span {
+				display: block;
+				font-family: $r;
+			}
+		}
+		
+	}
+}
+
+@media only screen and (max-width: 736px) {
+	.collection__info_photo {
+		width: 100%;
+		margin: 25px 0;
+	}
+	.collection__info_desc {
+		width: 100%;
+		padding-left: 0;
+	}
+}

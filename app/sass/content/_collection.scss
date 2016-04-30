@@ -4,4 +4,22 @@
 		width: 100%;
 		padding: 25px 0;
 	}
+	&__info {
+		float: left;
+		width: 100%;
+		padding: 25px 0;
+		&_photo {
+			float: left;
+			width: 50%;
+			
+		}
+		&_desc {
+			float: left;
+			width: 50%;
+			-webkit-box-sizing: border-box;
+			   -moz-box-sizing: border-box;
+			        box-sizing: border-box;
+			padding-left: 30px;
+		}
+	}
 }

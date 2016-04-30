@@ -57,6 +57,7 @@
 				width: 100px;
 				height: 40px;
 				border: 1px solid #cfcfcf;
+				outline: none;
 				@include border-radius(20px);
 				@include background-clip(padding-box);
 				background-color: #fff;
