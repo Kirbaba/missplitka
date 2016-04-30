@@ -1,12 +1,25 @@
 .bassket_header{
 	float:left;
 	width: 100%;
+	border-bottom: 1px solid  #e3e3e3;
+	border-top: 1px solid  #e3e3e3;
+	padding: 10px 0 20px;
+	color: #3a3a3a;
+	font-size: 14px;
+	line-height: 36px;
+	font-weight: 600;
+}
+.product_cont{
+	display: block;
+	width: 100%;
+	float: left;
 }
 .product_name {
 	float: left;
 	width: 30%;
 }
 .product_price{
+	text-align: center;
 	float: left;
 	width: 20%;
 }
@@ -14,21 +27,206 @@
 .product_amount{
 	float: left;
 	width: 30%;
-}
-	.any_block{
-	width: 100%;
-}
-	.prouct_shtuki{
+	text-align: center;
+	&_title {
 		float: left;
-		width: 50%;
-
-	}
-	.product_metri{
-		float: left;
-		width: 50%;
+		width: 100%;
 		
 	}
-.product_price{
+	&_type {
+		float: left;
+		width: 50%;
+		color: #787777;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 18px;
+	}
+}
+.product_summa{
+	float: left;
+	width: 15%;
+}
+.product_basket{
+	width: 5%;
+}
+.basket_first_line{
+	width: 100%;
+	float: left;
+	padding: 40px 0 40px 0;
+	border-bottom: 1px solid  #e3e3e3;
+}
+.product_name_popup{
+	float: left;
+	width: 30%;
+}
+.header__basket_popup_desc{
+	float: left;
+	padding: 25px 0 10px 10px;
+	color: #1c1b1b;
+	font-size: 16px;
+	font-weight: 400;
+	text-decoration: underline;
+}
+.product_price_popup{
 	float: left;
 	width: 20%;
+	padding: 25px 0 10px 10px;
+	text-align: center;
+}
+.product_amount_popup{
+	float: left;
+	text-align: center;
+	width: 30%;
+	&_type {
+		position: relative;
+		float: left;
+		width: 10%;
+		color: #787777;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 18px;
+	}
+	
+	&catalog__sidebar_price_input{
+		float: left;
+		padding: 25px 0 10px 10px;
+	}
+}
+.count_plus{
+	position: absolute;
+	z-index: 100;
+	margin-left: -20px;
+	top: 210px;
+	width: 10px;
+	height: 8px;
+	color: #ffd505;
+	font-size: 16px;
+	line-height: 18px;
+}
+.count_minus{
+	position: absolute;
+	z-index: 100;
+	margin-left: 10px;
+	top: 210px;
+	width: 6px;
+	height: 2px;
+	color: #e15554;
+	font-size: 16px;
+	line-height: 18px;
+}
+	
+.product_summa_popup{
+	float: left;
+	width: 10%;
+	color: #e15554;
+	font-size: 16px;
+	font-weight: 900;
+	padding: 25px 0 10px 10px;
+}
+.product_basket_popup{
+	padding: 25px 0 10px 38px;
+	float: left;
+	width: 5%;
+}
+.product_footer{
+	display: block;
+	width: 100%;
+	float: left;
+	font-weight: 700;
+	line-height: 36px;
+	.price, .cost, ves, massa{
+		display: block;
+		float: right;
+	}
+	h4{
+		color: #3a3a3a;
+		font-size: 14px;
+	}
+	h3{
+
+		color: #e15554;
+		font-size: 24px;
+	}
+}
+
+/* форма */
+.basket_cont{
+	display: block;
+	float: left;
+	width: 100%;
+	h3{
+		width: 409px;
+		height: 22px;
+		color: #3a3a3a;
+		font-size: 24px;
+		font-weight: 900;
+	}
+}
+.basket_form_1{
+	float: left;
+	width: 65%;
+}
+.form-group {
+	display: block;
+	padding: 40px 0 40px 0;
+}
+.form-group input,
+			select,
+textarea{
+	
+	float: left;
+	width: 567px;
+	border: 1px solid #ccc;
+	margin-top: 4px;
+	line-height: 40px;
+	font-size: 12px;
+	letter-spacing: 2px;
+	text-indent: 12px;
+	background-color: transparent;
+	margin: auto;
+
+}
+
+.form-group .select{
+	height: 40px;
+}
+
+.date_time {
+	width: 100%;
+}
+.small_col{
+	margin-right: 10px;
+	input{
+		width: 272px;
+		line-height: 40px;
+	}
+	textarea{
+		height: 40px;
+		float: left;
+	}
+	
+}
+
+.text{
+	display: block;
+	width: 200px;
+	padding: 0px 0 10px;
+	h3{
+		font-size: 14px;
+		color: #7f7f7f;
+		width: 200px;
+	}
+	h4{
+		position: absolute;
+		padding: 10px 0 40px; 
+		color: #fb3e12;
+		font-size: 12px;
+	}
+}
+
+
+.basket_form_2{
+	height: 50%;
+	width: 30%;
+	background-color: #000;
 }
