@@ -21,6 +21,12 @@ jQuery(document).ready(function($) {
    
   });
 });
+jQuery(document).ready(function($) {
+    $('.productcard__carousel_thumbnail_item').on('click', function(){
+        var src = $(this).children('img').attr('src');
+        $('.productcard__carousel_main_img').children('img').attr('src', src);
+    });
+});
 $(document).ready(function() {
  
   $(".banner__carousel").owlCarousel({
@@ -76,7 +82,7 @@ function init() {
         // Описание геометрии.
         geometry: {
             type: "Point",
-            coordinates: [55.778544, 37.664856]
+            coordinates: [55.778544 , 37.664856]
         },
         // Свойства.
         properties: {
