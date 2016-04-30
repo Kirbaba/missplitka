@@ -1154,6 +1154,37 @@ ul {
     .productcard__delivery_text span {
       color: white; }
 
+.bassket_header {
+  float: left;
+  width: 100%; }
+
+.product_name {
+  float: left;
+  width: 30%; }
+
+.product_price {
+  float: left;
+  width: 20%; }
+
+.product_amount {
+  float: left;
+  width: 30%; }
+
+.any_block {
+  width: 100%; }
+
+.prouct_shtuki {
+  float: left;
+  width: 50%; }
+
+.product_metri {
+  float: left;
+  width: 50%; }
+
+.product_price {
+  float: left;
+  width: 20%; }
+
 .footer {
   float: left;
   width: 100%;
