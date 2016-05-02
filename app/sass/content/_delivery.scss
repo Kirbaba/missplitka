@@ -1,0 +1,70 @@
+.deliverycalc {
+	float: left;
+	width: 370px;
+	height: 439px;
+	background-color: #e15553;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	padding: 40px 30px;
+	&_select {
+		float: left;
+		width: 100%;
+		border: none;
+		outline: none;
+		height: 40px;
+		line-height: 40px;
+		-webkit-appearance: none;
+	       -moz-appearance: none;
+	            appearance: none;
+		background-image: url('../img/Shape-18.png');
+		background-repeat: no-repeat;
+		background-position: 95% 50%;
+		margin-bottom: 25px;
+		padding: 0 25px 0 15px;
+	}
+	&_price {
+		font-style: 14px;
+		margin-bottom: 15px;
+		display: block;
+		color: #fff;
+	}
+	&_weight {
+		font-style: 14px;
+		margin-bottom: 15px;
+		display: block;
+		color: #7A1C1C;
+	}
+	label {
+		float: left;
+		width: 100%;
+		color: #FFF;
+		font-size: 14px;
+		font-style: italic;
+		margin: 15px 0 5px; 
+	}
+	&_result {
+		float: left;
+		width: 100%;
+		text-align: right;
+		color: #FFF;
+		margin-top: 40px;
+		a {
+			font-style: italic;
+			color: #fff;
+			float: left;
+			width: 100%;
+			margin-bottom: 35px;
+			@include link {
+				text-decoration: underline;
+			}
+		}
+		h5 {
+			margin-bottom: 15px;
+			font-family: $b;
+			span {
+				color: #7A1C1C;
+			}
+		}
+	}
+}
