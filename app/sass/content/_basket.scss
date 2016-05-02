@@ -72,6 +72,11 @@
 	width: 20%;
 	padding: 25px 0 10px 10px;
 	text-align: center;
+	h4 {
+		font-family: $b;
+		font-size: 18px;
+		color: #3A3A3A;
+	}
 }
 .product_amount_popup{
 	float: left;
@@ -85,6 +90,10 @@
 		font-size: 14px;
 		font-weight: 400;
 		line-height: 18px;
+		span {
+			color: #A3A3A3;
+			font-size: 12px;
+		}
 	}
 	
 	&catalog__sidebar_price_input{
@@ -102,6 +111,7 @@
 	color: #ffd505;
 	font-size: 16px;
 	line-height: 18px;
+	font-style: 16px;
 }
 .count_minus{
 	position: absolute;
@@ -112,6 +122,7 @@
 	height: 2px;
 	color: #e15554;
 	font-size: 16px;
+	font-style: 16px;
 	line-height: 18px;
 }
 	
@@ -127,6 +138,9 @@
 	padding: 25px 0 10px 38px;
 	float: left;
 	width: 5%;
+	.header__basket_popup_del {
+		margin-top: 0;
+	}
 }
 .product_footer{
 	display: block;
@@ -134,18 +148,22 @@
 	float: left;
 	font-weight: 700;
 	line-height: 36px;
-	.price, .cost, ves, massa{
-		display: block;
-		float: right;
-	}
+	text-align: right;
+	margin: 40px 0;
 	h4{
 		color: #3a3a3a;
 		font-size: 14px;
+		
 	}
 	h3{
-
-		color: #e15554;
-		font-size: 24px;
+		font-family: $b;
+		color: #3a3a3a;
+		font-size: 14px;
+		font-family: $b;
+		span {
+			color: #E15554;
+			font-size: 24px;
+		}
 	}
 }
 
@@ -154,6 +172,13 @@
 	display: block;
 	float: left;
 	width: 100%;
+	p {
+		font-size: 14px;
+		color: #7F7F7F;
+		float: left;
+		width: 100%;
+		margin: 10px 0;
+	}
 	h3{
 		width: 409px;
 		height: 22px;
@@ -164,16 +189,51 @@
 }
 .basket_form_1{
 	float: left;
-	width: 65%;
+	width: calc(100% - 370px);
+	margin-bottom: 45px;
+
+	
+}
+
+.basket_input {
+	float: left;
+	width: 567px;
+	margin: 15px 0 0 0;
+	label {
+		float: left;
+		width: 100%;
+		margin-bottom: 15px;
+		color: #7F7F7F;
+		font-size: 14px;
+	}
+	&_lg {
+		float: left;
+		width: 100%;
+		height: 40px;
+		line-height: 40;
+		padding: 0 15px;
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+		        box-sizing: border-box;
+	}
+	&-small {
+		float: left;
+		width: 274px;
+		margin: 15px 20px 0 0;
+		label {
+			float: left;
+			width: 100%;
+			margin-bottom: 15px;
+			color: #7F7F7F;
+			font-size: 14px;
+		}
+	}
 }
 .form-group {
 	display: block;
 	padding: 40px 0 40px 0;
 }
-.form-group input,
-			select,
-textarea{
-	
+.form-group input, select, textarea{	
 	float: left;
 	width: 567px;
 	border: 1px solid #ccc;
@@ -182,13 +242,19 @@ textarea{
 	font-size: 12px;
 	letter-spacing: 2px;
 	text-indent: 12px;
-	background-color: transparent;
+	background-color: #fff;
 	margin: auto;
-
+	
 }
 
 .form-group .select{
 	height: 40px;
+	-webkit-appearance: none;
+	       -moz-appearance: none;
+	            appearance: none;
+	background-image: url('../img/Shape-18.png');
+	background-repeat: no-repeat;
+	background-position: 97% 50%;
 }
 
 .date_time {
@@ -229,4 +295,73 @@ textarea{
 	height: 50%;
 	width: 30%;
 	background-color: #000;
+}
+
+.date_time {
+	float: left;
+	margin-top: 15px;
+	font-family: $r;
+	.text h3 {
+		font-family: $r;
+		font-weight: normal;
+	}
+}
+
+.delivery__box {
+    width: 370px;
+    float: left;
+}
+
+.basket__sandbox {
+	float: left;
+	width: 100%;
+	margin-bottom: 45px;
+	border-top: 1px solid #E3E3E3;
+	textarea {
+		resize: none;
+		outline: none;
+		margin-bottom: 15px;
+	}
+
+	input[type="checkbox"] {
+	   display:none;
+	}
+	input[type="checkbox"] + label {
+    font-size:14px;
+	display: block;
+	margin: 0 0 15px 0;
+	}
+	input[type="checkbox"] + label span {
+	    display: inline-block;
+	    width:19px;
+	    height:19px;
+	    margin:-1px 10px 0 0;
+	    vertical-align:middle;
+	    cursor:pointer;
+	    -moz-border-radius:  50%;
+	    border-radius:  50%;
+	    background-color: #fff;
+	    border: 1px solid;
+	}
+
+	input[type="checkbox"]:checked + label span{
+	    background-color: #FBCD0A;
+	    position: relative;
+	    &:after {
+	    	content: "\f00c";
+			font-family: FontAwesome;
+			position:absolute;
+			top:50%;
+			left:50%;
+			margin-top: -2px;
+			-webkit-transform: translate(-50%, -50%);
+			   -moz-transform: translate(-50%, -50%);
+			    -ms-transform: translate(-50%, -50%);
+			     -o-transform: translate(-50%, -50%);
+			        transform: translate(-50%, -50%);
+			color: #E15554;
+			z-index: 9;
+			font-size: 9px;
+	    }
+	}
 }

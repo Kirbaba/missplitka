@@ -32,126 +32,159 @@
 		<div class="product_amount_popup">
 			<div class="product_amount_type">
 				<a href="" class="count_minus">-</a>
-					<input type="text" class="catalog__sidebar_price_input">
+					<input type="text" class="catalog__sidebar_price_input" value="1">
 				<a href="" class="count_plus">+</a>
+				<span>шт</span>
 			
 			</div>
 			<div class="product_amount_type">
 				<a href="" class="count_minus">-</a>
-					<input type="text" class="catalog__sidebar_price_input">
+					<input type="text" class="catalog__sidebar_price_input" value="1.5">
 				<a href="" class="count_plus">+</a>
-				
+				<span>м2</span>
 			</div>
 		</div>
 		<div class="product_summa_popup">
 			<h4>5 460.00 руб.</h4>
 		</div>
 		<div class="product_basket_popup">
-			<img src="img/noun_323254_cc.png" alt="" />
+		<a href="#">
+			
+		<a href="#" class="header__basket_popup_del"></a>
 		</div>
 	</div>
 </div>
 <div class="product_footer">
-	<div class="price"><h3>9 545.62 руб.</h3></div>	
-	<div class="cost"><h4>Стоимость товаров:</h4></div>
-	<div class="massa"><h4>Вес заказа</h4></div>
-	<div class="ves"><h4>109.17 кг</h4></div>
+	<h3>Стоимость товаров: <span>9 545.62 руб.</span></h3>	
+	<h4>Вес заказа: <span>109.17 кг.</span></h4>
 </div>
 <div class="basket_cont">
 		<h3>Письмо с информацией о заказе</h3>
 		<form action="" class="basket_form_1" novalidate  method="post">
-					<label class="form-group">
-						<div class="text">
-							<h3>Имя получателя</h3>
-						</div>
-                        <input type="text" name="Имя получателя"/>
-                    </label>
-                    <label class="form-group">
-                    	<div class="text">
-							<h3>Электронная почта</h3>
-						</div>
-                        <input type="email" name="Электонная почта"  />
-                    </label>
-                    <label class="form-group"><div class="text">
-							<h3>Номер телефона</h3>
-						</div>
-                        <input type="tel" name="Номер телефона" />
-                    </label>
-                    <div class="text"><h4>* Поля обязательные для заполнения</h4></div>
-                    <label class="form-group">
-                    	<div class="text">
-							<h3>Способ оплаты</h3>
-						</div>	
-                   	 	<select class="select" >
-                    			<option>1</option>
-                    			<option>2</option>
-                    			<option>3</option>
-                    			<option>4</option>
-                   		 </select>
-                   	</label>
-                   	 <label class="form-group">	
-                   	 	<div class="text">
-							<h3>Способ  получения</h3>
-						</div>
-                   	 	<select class="select" >
-                    			<option>1</option>
-                    			<option>2</option>
-                    			<option>3</option>
-                    			<option>4</option>
-                   		 </select>
-                   	</label>
-                   	<div class="date_time">
-                   		<div class="text">
-							<h3>Дата и время доставки</h3>
-						</div>
-                   	 <label class="small_col" class="form-group">	
-                   	 	<input type="date" name="Дата и время" />
-                   	</label>
-                   	 <label class="small_col" class="form-group">	
-                   	 	<input type="time" name="Дата и время"  />
-                   	</label>
-                   	</div>
-                   	<label class="form-group">
-						<div class="text">
-							<h3>Введите город</h3>
-						</div>
-                        <input type="text" name="Введите город"/>
-                    </label>
-                    <label class="form-group">
-						<div class="text">
-							<h3>Улица</h3>
-						</div>
-                        <input type="text" name="Улица"/>
-					</label>
-					<div class="date_time">
-                   		<div class="text">
-							<h3>Дом</h3>
-						</div>
-                   	 <label class="small_col" class="form-group">	
-                   	 	<input type="text" name="Дата и время" />
-                   	</label>
-                   		<div class="text">
-							<h3>Корпус</h3>
-						</div>
-                   	 <label class="small_col" class="form-group">	
-                   	 	<input type="text" name="Дата и время"  />
-                   	</label>
-                   	</div>
-                   	<div class="date_time">
-                   		<div class="text">
-							<h3>Дата и время доставки</h3>
-						</div>
-                   	 <label class="small_col" class="form-group">	
-                   	 	<input type="date" name="Дата и время" />
-                   	</label>
-                   	 <label class="small_col" class="form-group">	
-                   	 	<input type="time" name="Дата и время"  />
-                   	</label>
-                   	</div>
-                   	<label class="form-group">
-                        <textarea name="message" ></textarea>
-                    </label>	
+			<label class="form-group">
+				<div class="text">
+					<h3>Имя получателя</h3>
+				</div>
+                <input type="text" name="Имя получателя"/>
+            </label>
+            <label class="form-group">
+            	<div class="text">
+					<h3>Электронная почта</h3>
+				</div>
+                <input type="email" name="Электонная почта"  />
+            </label>
+            <label class="form-group"><div class="text">
+					<h3>Номер телефона</h3>
+				</div>
+                <input type="tel" name="Номер телефона" />
+            </label>
+            <div class="text"><h4>* Поля обязательные для заполнения</h4></div>
+            <label class="form-group">
+            	<div class="text">
+					<h3>Способ оплаты</h3>
+				</div>	
+           	 	<select class="select" >
+            			<option>1</option>
+            			<option>2</option>
+            			<option>3</option>
+            			<option>4</option>
+           		 </select>
+           	</label>
+           	 <label class="form-group">	
+           	 	<div class="text">
+					<h3>Способ  получения</h3>
+				</div>
+           	 	<select class="select" >
+            			<option>1</option>
+            			<option>2</option>
+            			<option>3</option>
+            			<option>4</option>
+           		 </select>
+           	</label>
+           	<div class="date_time">
+           		<div class="text">
+					<h3>Дата и время доставки</h3>
+				</div>
+           	 <label class="small_col" class="form-group">	
+           	 	<input type="date" name="Дата и время" />
+           	</label>
+           	 <label class="small_col" class="form-group">	
+           	 	<input type="time" name="Дата и время"  />
+           	</label>
+           	</div>
+
+            <!-- open .basket_input -->
+           	<div class="basket_input">
+           		<label for="city">Введите город</label>
+           		<input id="city" type="text" class="basket_input_lg" />
+           	</div>
+           	<!-- close .basket_input -->
+			<!-- open .basket_input -->
+           	<div class="basket_input">
+           		<label for="city">Улица</label>
+           		<input id="city" type="text" class="basket_input_lg" />
+           	</div>
+           	<!-- close .basket_input -->
+
+			<!-- open .basket_input -->
+           	<div class="basket_input-small">
+           		<label for="city">Дом</label>
+           		<input id="city" type="text" class="basket_input_lg" />
+           	</div>
+           	<!-- close .basket_input -->
+
+			<!-- open .basket_input -->
+           	<div class="basket_input-small">
+           		<label for="city">Корпус</label>
+           		<input id="city" type="text" class="basket_input_lg" />
+           	</div>
+           	<!-- close .basket_input -->
+
+			<!-- open .basket_input -->
+           	<div class="basket_input-small">
+           		<label for="city">Строение</label>
+           		<input id="city" type="text" class="basket_input_lg" />
+           	</div>
+           	<!-- close .basket_input -->
+
+			<!-- open .basket_input -->
+           	<div class="basket_input-small">
+           		<label for="city">Квартира</label>
+           		<input id="city" type="text" class="basket_input_lg" />
+           	</div>
+          
+                   
+                   	
 		</form>
+
+		<!-- open .delivery__box -->
+		<div class="delivery__box">
+			<!-- @@include /deliverycalc.html -->
+		</div>
+		<!-- close .delivery__box -->
+
+		<!-- open .basket__sandbox -->
+		<div class="basket__sandbox">
+			<!-- open .basket_input -->
+           	<div class="basket_input">
+           		<label for="city">Комментарий</label>
+           		
+           		<textarea name="comment" id="comment" ></textarea>
+
+           		<input type="checkbox" id="basket_chek" />
+				<label for="basketchek">
+					<span></span>
+					Зарегистрироваться и сохранить данные для последующих заказов
+				</label>
+          	</div>
+           	<!-- close .basket_input -->
+           	<!-- open .catalog__item_desc_btn-line -->
+			<div class="catalog__item_desc_btn-line">
+				<a href="#" class="catalog__item_desc_btn">Оформить заказ</a>
+			</div>
+			<!-- close .catalog__item_desc_btn-line -->
+		</div>
+		<!-- close .basket__sandbox -->
 
 </div>
 <!-- @@include /footer.html -->
