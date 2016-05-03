@@ -189,9 +189,21 @@
 		</div>
 		</div>
 		<div class="product_price_popup">
+			<!-- open .mob_basket_price -->
+			<h3 class="mob_basket_price">5 460.00 руб.</h3>
+			<!-- close .mob_basket_price -->
 			<h4>5 460.00 р/м2.</h4>
 		</div>
 		<div class="product_amount_popup">
+
+			
+		<div class="mob_product_amount">
+			<span class="product_amount_title">Количество</span>
+			<span class="product_amount_type">В штуках</span>
+			<span class="product_amount_type">В метрах</span>
+		</div>
+
+
 			<div class="product_amount_type">
 				<a href="" class="count_minus">-</a>
 					<input type="text" class="catalog__sidebar_price_input" value="1">
@@ -207,6 +219,7 @@
 			</div>
 		</div>
 		<div class="product_summa_popup">
+
 			<h4>5 460.00 руб.</h4>
 		</div>
 		<div class="product_basket_popup">
@@ -225,18 +238,18 @@
 		<form action="" class="basket_form_1" novalidate  method="post">
 			<label class="form-group">
 				<div class="text">
-					<h3>Имя получателя</h3>
+					<h3>Имя получателя <span class="basket_star">*</span></h3>
 				</div>
                 <input type="text" name="Имя получателя"/>
             </label>
             <label class="form-group">
             	<div class="text">
-					<h3>Электронная почта</h3>
+					<h3>Электронная почта <span class="basket_star">*</span></h3>
 				</div>
                 <input type="email" name="Электонная почта"  />
             </label>
             <label class="form-group"><div class="text">
-					<h3>Номер телефона</h3>
+					<h3>Номер телефона <span class="basket_star">*</span></h3>
 				</div>
                 <input type="tel" name="Номер телефона" />
             </label>
@@ -374,8 +387,10 @@
 			<!-- close .catalog__item_desc_btn-line -->
 		</div>
 		<!-- close .basket__sandbox -->
-
+	
 </div>
+</div>
+
 <!-- start footer.html-->
 <!-- open .footer -->
 <footer class="footer">

@@ -1,0 +1,130 @@
+h3.mob_basket_price {
+	display: none;
+}
+
+.mob_product_amount {
+	display: none;
+	@extend .product_amount;
+	width: 100%;
+	text-align: left;
+	margin-top: 30px;
+	.product_amount_title {
+		font-family: $bl;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	.basket_form_1 {
+		width: 90%;
+	}
+
+	.basket_input {
+		width: 90%;
+	}
+
+	.bassket_header {
+		display: none;
+	}
+
+	.form-group {
+		input, select, textarea {
+			width: 90%;
+		}
+		.text {
+			width: auto;
+		}
+	}
+	.count_plus {
+		//right: 15px;
+		margin-left: -20px;
+	}
+
+	.product_name_popup {
+		width: 70%;
+	}
+
+	
+	.product_amount_popup {
+	    float: none;
+	    text-align: center;
+	    width: 40%;
+	    margin-left: 10%;	   
+	}
+	.product_price_popup {
+		text-align: left;
+		padding-top: 10px;
+		float: right;
+	}
+	 h3.mob_basket_price {
+    		display: block;
+    		color: #E15554;
+    		font-size: 18px;
+    		font-family: $bl;	
+    		margin-bottom: 10px;
+    }
+    .product_price_popup h4 {
+    	font-size: 14px;
+    }
+
+	.product_summa_popup, .product_basket_popup {
+		display: none;
+	}
+
+	.small_col input {
+    	width: 283px; 
+    }
+    .basket_input-small {
+    	width: 285px;
+    }
+
+    .product_amount_type {
+    	text-align: left;
+    }
+    .mob_product_amount {
+    	display: block;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+	
+}
+
+@media only screen and (max-width: 770px) {
+
+}
+
+@media only screen and (max-width: 736px) {
+	.form-group input, select, textarea {
+		width: 100%;
+	}
+
+	.small_col {
+		margin-right: 8px;
+		input {
+		    width: 47%;
+		    margin-bottom: 30px;
+	    }
+	}
+    .form-group input, .form-group select, .form-group textarea {
+    	width: 100%;
+    }
+
+    .basket_form_1, .basket_input {
+    	width: 100%;
+    }
+    .basket_input-small {
+    	width: 47%;
+    	margin-right: 16px;
+    	&:nth-of-type(2n){
+    		margin-right: 0;
+    	}
+    }
+}
+
+@media only screen and (max-width: 500px) {
+	
+}
+
+@media only screen and (max-width: 320px) {
+
+}

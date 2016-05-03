@@ -6,7 +6,6 @@
 	padding: 10px 0 20px;
 	color: #3a3a3a;
 	font-size: 14px;
-	line-height: 36px;
 	font-weight: 600;
 }
 .product_cont{
@@ -17,11 +16,13 @@
 .product_name {
 	float: left;
 	width: 30%;
+	margin-top: 42px;
 }
 .product_price{
 	text-align: center;
 	float: left;
 	width: 20%;
+	margin-top: 42px;
 }
 
 .product_amount{
@@ -31,7 +32,7 @@
 	&_title {
 		float: left;
 		width: 100%;
-		
+		margin-bottom: 25px;
 	}
 	&_type {
 		float: left;
@@ -40,11 +41,16 @@
 		font-size: 14px;
 		font-weight: 400;
 		line-height: 18px;
+		position: relative;
+		.catalog__sidebar_price_input {
+			margin: 12px 0;
+		}
 	}
 }
 .product_summa{
 	float: left;
 	width: 15%;
+	margin-top: 42px;
 }
 .product_basket{
 	width: 5%;
@@ -105,7 +111,7 @@
 	position: absolute;
 	z-index: 100;
 	margin-left: -20px;
-	top: 210px;
+	top: 23px;
 	width: 10px;
 	height: 8px;
 	color: #ffd505;
@@ -117,7 +123,7 @@
 	position: absolute;
 	z-index: 100;
 	margin-left: 10px;
-	top: 210px;
+	top: 23px;
 	width: 6px;
 	height: 2px;
 	color: #e15554;
@@ -195,6 +201,9 @@
 	
 }
 
+.small_col input {
+	border: 1px solid #D1D3D4;
+}
 .basket_input {
 	float: left;
 	width: 567px;
@@ -215,6 +224,7 @@
 		-webkit-box-sizing: border-box;
 		   -moz-box-sizing: border-box;
 		        box-sizing: border-box;
+		border: 1px solid #D1D3D4;
 	}
 	&-small {
 		float: left;
@@ -281,12 +291,16 @@
 		font-size: 14px;
 		color: #7f7f7f;
 		width: 200px;
+		font-family: $r;
+		font-weight: normal;
 	}
 	h4{
 		position: absolute;
 		padding: 10px 0 40px; 
 		color: #fb3e12;
 		font-size: 12px;
+		font-family: $r;
+		font-weight: normal;
 	}
 }
 
@@ -364,4 +378,8 @@
 			font-size: 9px;
 	    }
 	}
+}
+
+span.basket_star {
+	color: #FB3E12;
 }
