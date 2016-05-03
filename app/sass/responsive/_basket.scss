@@ -97,6 +97,9 @@ h3.mob_basket_price {
 	.form-group input, select, textarea {
 		width: 90%;
 	}
+	.form-group {
+		width: 100%;
+	}
 	.small_col {
 		margin-right: 8px;
 		input {
@@ -106,6 +109,9 @@ h3.mob_basket_price {
 	}
     .form-group input, .form-group select, .form-group textarea {
     	width: 100%;
+    	-webkit-box-sizing: border-box;
+    	   -moz-box-sizing: border-box;
+    	        box-sizing: border-box;
     }
 
     .basket_form_1, .basket_input {
@@ -119,11 +125,11 @@ h3.mob_basket_price {
     	}
     }
     .product_name_popup{
-		width: 50%;
+		width: 60%;
 	}
 	.product_price_popup{
 		position: relative;
-		width: 50%;
+		width: 40%;
 		padding: 0;
 		top: 12px;
 	}
@@ -156,6 +162,33 @@ h3.mob_basket_price {
     }
     .basket_cont h3 {
     font-size: 16px;
+    }
+	
+	.delivery__box {
+		width: 100%;
+	}
+    .deliverycalc {
+    	width: 100%;
+    	-webkit-box-sizing: border-box;
+    	   -moz-box-sizing: border-box;
+    	        box-sizing: border-box;
+    	padding-left: 20px;
+    	padding-right: 20px;
+    	&_result {
+    		h5{
+				font-size: 13px;
+    		}
+    	}
+    }
+    
+    .basket_cont h3 {
+    	width: 100%;
+    }
+    .basket__sandbox textarea {
+    	-webkit-box-sizing: border-box;
+    	   -moz-box-sizing: border-box;
+    	        box-sizing: border-box;
+        width: 100%;
     }
 }
 
